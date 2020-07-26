@@ -1,0 +1,7 @@
+---
+-   name: Set Up Squid
+    hosts: all
+    remote_user: root
+    roles:
+      - docker
+      - squid

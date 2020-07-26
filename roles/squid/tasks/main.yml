@@ -1,0 +1,8 @@
+---
+- name: Run Squid
+  docker_container:
+    name: squid
+    network_mode: bridge
+    published_ports: 3128:3128
+    image: minimum2scp/squid
+    restart_policy: always
